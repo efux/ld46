@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "allowJs": true,
+        "sourceMap": true,
+        "lib": [
+            "es5",
+            "dom",
+            "scripthost"
+        ]
+    },
+    "include": [
+        "**/*.ts"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ld46",
+  "version": "0.1.0",
+  "description": "A game for LD46 (Theme 'Keep It Alive')",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": "git@github.com:efux/ld46.git",
+  "author": "Etienne Fux",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "phaser": "^3.22.0"
+  }
+}
