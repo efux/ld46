@@ -1,7 +1,8 @@
 import * as Phaser from 'phaser';
 import {Level} from './level';
+import GameConfig = Phaser.Types.Core.GameConfig;
 
-const gameConfig: Phaser.Types.Core.GameConfig = {
+const gameConfig: GameConfig = {
     title: 'LD46',
 
     type: Phaser.AUTO,
@@ -10,6 +11,10 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
         width: window.innerWidth,
         height: window.innerHeight,
 
+    },
+
+    render: {
+        maxLights: 50,
     },
 
     scene: Level,
@@ -22,7 +27,7 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
     },
 
     parent: 'game',
-    backgroundColor: '#FFdddd',
+    backgroundColor: '#000000',
 
 };
 
