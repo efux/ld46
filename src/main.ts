@@ -1,7 +1,8 @@
 import * as Phaser from 'phaser';
+import {Level} from './level';
 
 const gameConfig: Phaser.Types.Core.GameConfig = {
-    title: 'Sample',
+    title: 'LD46',
 
     type: Phaser.AUTO,
 
@@ -11,13 +12,13 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
 
     },
 
+    scene: Level,
+
     physics: {
-        default: 'arcade',
+        default: "arcade",
         arcade: {
-            debug: true,
-
-        },
-
+            gravity: {y: 0}
+        }
     },
 
     parent: 'game',
